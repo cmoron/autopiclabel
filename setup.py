@@ -1,4 +1,10 @@
+"""
+Setup script for the AutoPicLabel project.
+"""
 from setuptools import setup, find_packages
+
+with open('README.md', 'r', encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name="autopiclabel",
@@ -16,7 +22,7 @@ setup(
     author="Cyril Moron",
     author_email="cyril.moron@gmail.com",
     description="A module to analyze images, generate descriptive names, and rename image files.",
-    long_description=open('README.md').read(),
+    long_description=long_description,
     long_description_content_type='text/markdown',
     url="https://github.com/cmoron/autopiclabel",
     classifiers=[
